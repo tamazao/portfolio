@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,700" />
         <link type="text/css" rel="stylesheet" href="styles/main.css" />
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="scripts/app.js"></script>
     </head>
 
-    <body>
+    <body class="js-menu-close">
+      <div id="sidebar-wrapper" class="js-menu-open">
+        <div id="close-btn" class="js-menu-close"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHRpdGxlPkFydGJvYXJkIDE8L3RpdGxlPjxyZWN0IHk9IjE5IiB3aWR0aD0iNDAiIGhlaWdodD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAgLTguMjgpIHJvdGF0ZSg0NSkiIHN0eWxlPSJmaWxsOiNmZmYiLz48cmVjdCB5PSIxOSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjI4IDIwKSByb3RhdGUoLTQ1KSIgc3R5bGU9ImZpbGw6I2ZmZiIvPjwvc3ZnPg=="alt="close icon"/> </div>
+        <h2>Spike</h2>
+        <h2>Spiegel</h2>
+        <div class="sidebar-links">
+          <a href="#About">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#Contact">Contact</a>
+        </div>
+
+
+      </div>
         <div id="intro" class="container-fluid hero landscape">
             <h1>Spike Spiegel</h1>
             <h5>Freelance Photographer</h5>
             <a href="#gallery"><button type="button" class="cta">Gallery</button></a>
+            <div id="hamburger" class="js-menu-open">
+              <img src="img/icons/menu.svg" alt= "menu icon" />
+            </div>
         </div>
         <div id="about" class="container hero">
             <h2>About Me</h2>
@@ -97,5 +115,4 @@
             </div>
         </div>
     </body>
-
 </html>
