@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html>
-
     <head>
         <title>Portfolio</title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
         <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,700" />
         <link type="text/css" rel="stylesheet" href="styles/main.css" />
+        <script src="http://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
+        <script src="scripts/app.js"></script>
     </head>
 
-    <body>
+    <body class="js-menu-close">
+      <div id="sidebar-wrapper" class="js-menu-open">
+        <div id="close-btn" class="js-menu-close"><img src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MCA0MCI+PHRpdGxlPkFydGJvYXJkIDE8L3RpdGxlPjxyZWN0IHk9IjE5IiB3aWR0aD0iNDAiIGhlaWdodD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjAgLTguMjgpIHJvdGF0ZSg0NSkiIHN0eWxlPSJmaWxsOiNmZmYiLz48cmVjdCB5PSIxOSIgd2lkdGg9IjQwIiBoZWlnaHQ9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC04LjI4IDIwKSByb3RhdGUoLTQ1KSIgc3R5bGU9ImZpbGw6I2ZmZiIvPjwvc3ZnPg=="alt="close icon"/> </div>
+        <h2>Spike</h2>
+        <h2>Spiegel</h2>
+        <div class="sidebar-links">
+          <a href="#About">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#Contact">Contact</a>
+        </div>
+
+
+      </div>
         <div id="intro" class="container-fluid hero landscape">
             <h1>Spike Spiegel</h1>
             <h5>Freelance Photographer</h5>
             <a href="#gallery"><button type="button" class="cta">Gallery</button></a>
+            <div id="hamburger" class="js-menu-open">
+              <img src="img/icons/menu.svg" alt= "menu icon" />
+            </div>
         </div>
         <div id="about" class="container hero">
             <h2>About Me</h2>
@@ -33,35 +51,35 @@
             <h2>Gallery</h2>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="img/gallery/gallery-01.jpg"><img src="img/gallery/gallery-01.jpg" /></a>
+                    <a href="img/gallery/gallery-01.jpg"><img src="img/gallery/gallery-01.jpg" alt="blindfolded girl infront of sea"/></a>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/gallery/gallery-02.jpg"><img src="img/gallery/gallery-02.jpg" /></a>
+                    <a href="img/gallery/gallery-02.jpg"><img src="img/gallery/gallery-02.jpg" alt= "arm in a wave"/></a>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/gallery/gallery-03.jpg"><img src="img/gallery/gallery-03.jpg" /></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="img/gallery/gallery-04.jpg"><img src="img/gallery/gallery-04.jpg" /></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="img/gallery/gallery-05.jpg"><img src="img/gallery/gallery-05.jpg" /></a>
-                </div>
-                <div class="col-md-4">
-                    <a href="img/gallery/gallery-06.jpg"><img src="img/gallery/gallery-06.jpg" /></a>
+                    <a href="img/gallery/gallery-03.jpg"><img src="img/gallery/gallery-03.jpg" alt="breaking waves in a rough ocean"/></a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <a href="img/gallery/gallery-07.jpg"><img src="img/gallery/gallery-07.jpg" /></a>
+                    <a href="img/gallery/gallery-04.jpg"><img src="img/gallery/gallery-04.jpg" alt="train tracks through a rainy window" /></a>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/gallery/gallery-08.jpg"><img src="img/gallery/gallery-08.jpg" /></a>
+                    <a href="img/gallery/gallery-05.jpg"><img src="img/gallery/gallery-05.jpg" alt="Beach and cove on a clear day" /></a>
                 </div>
                 <div class="col-md-4">
-                    <a href="img/gallery/gallery-09.jpg"><img src="img/gallery/gallery-09.jpg" /></a>
+                    <a href="img/gallery/gallery-06.jpg"><img src="img/gallery/gallery-06.jpg" alt="looking up at a skyscraper from the base" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="img/gallery/gallery-07.jpg"><img src="img/gallery/gallery-07.jpg" alt="close up of a field of grass" /></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="img/gallery/gallery-08.jpg"><img src="img/gallery/gallery-08.jpg" alt="stering wheel of a junked out car" /></a>
+                </div>
+                <div class="col-md-4">
+                    <a href="img/gallery/gallery-09.jpg"><img src="img/gallery/gallery-09.jpg" alt="closeup of a grey flower" /></a>
                 </div>
             </div>
         </div>
@@ -74,9 +92,9 @@
                 I'm available for freelance &ndash; from events like weddings to documenting your next adventure, let's chat!<br /> <a href="mailto:mail@example.net"><button type="button" class="cta">Contact</button></a>
             </p>
             <div id="social">
-                <a href="http://wwww.twitter.com"><img src="img/icons/twitter.svg" /></a>
-                <a href="http://www.instagram.com"><img src="img/icons/instagram.svg" /></a>
-                <a href="http://www.medium.com"><img src="img/icons/medium.svg" /></a>
+                <a href="http://wwww.twitter.com" ><img src="img/icons/twitter.svg" alt="twitter bird icon"/></a>
+                <a href="http://www.instagram.com" ><img src="img/icons/instagram.svg" alt="instagram icon" /></a>
+                <a href="http://www.medium.com" ><img src="img/icons/medium.svg" alt="medium icon"/></a>
             </div>
         </div>
         <div id="footer" class="container-fluid">
@@ -97,5 +115,4 @@
             </div>
         </div>
     </body>
-
 </html>
